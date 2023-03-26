@@ -37,18 +37,18 @@
     <option value="finnifty">FinNifty</option>
     </select>
     <button id="btn">Fetch Data</button><br>
-	<br>
+    <br>
    <div id="container"></div>
    <script>
        optionchain();
         const btn = document.getElementById('btn');
         btn.addEventListener('click', optionchain);
 
-      function getoptionchaindata(){
+      async function getoptionchaindata(){
         removeExisitingTable('optionChainTable');
         const index = document.getElementById('index').value;
           const url = `https://shantanujain101.pythonanywhere.com/fetchOptionChain/index=${index}`;
-            fetch(url, {
+            await fetch(url, {
             method: 'GET',
             headers: {
                'Accept': 'application/json',
@@ -59,7 +59,6 @@
                   .then((response) => {
                      jsonData = response['resultData']['opDatas'];
                      headervalue = response['resultData']['opDatas'][0];
-                     console.log(response['resultData']['opDatas'][1]);
                      // Get the container element where the table will be inserted
                     let container = document.getElementById("container");
                     
@@ -124,15 +123,15 @@
                     removetabledata(removelist[j]);
                 }
 
-                for(var x= 1; x<45; x++){
-                document.getElementsByTagName("tr")[x].remove();
-                }
-                document.getElementsByTagName("tr")[1].remove();
-                var rowcounter = (document.getElementsByTagName("tr").length-1);
-                var midrowcounter = Math.round((document.getElementsByTagName("tr").length-1)/2);
-                for(var y=rowcounter+1;  y>=midrowcounter+10; y--){
-                    document.getElementsByTagName("tr")[y-1].remove();
-                }
+                // for(var x= 1; x<45; x++){
+                // document.getElementsByTagName("tr")[x].remove();
+                // }
+                // document.getElementsByTagName("tr")[1].remove();
+                // var rowcounter = (document.getElementsByTagName("tr").length-1);
+                // var midrowcounter = Math.round((document.getElementsByTagName("tr").length-1)/2);
+                // for(var y=rowcounter+1;  y>=midrowcounter+10; y--){
+                //     document.getElementsByTagName("tr")[y-1].remove();
+                // }
             }
             function removetabledata(columnname) {
                     var tble = document.getElementById('optionChainTable');
@@ -247,17 +246,62 @@
                     }
                 }
                 
-                // const getniftyspot = ()=>{
-                //        getspotprice().then((a) =>{
-                //             console.log(a);
-                //        })
-                // };
-                // getniftyspot(); 
+                function removerows(){
+                    for(let i=0 ; i<=40; i++){
+                        var rowsize = document.getElementsByTagName("tr").length;
+                        document.getElementsByTagName("tr")[rowsize-1].remove();
+                        console.log("Removing Row:");
+                        console.log(rowsize);
+
+                    }
+                    for(let j=1 ; j<=20; j++){
+                        document.getElementsByTagName("tr")[2].remove();
+                        console.log("Removing Row:");
+                        console.log(rowsize);
+
+                    }
+                }
+
+                function freezeHeader(){
+                    // Get the table element
+                        var table = document.getElementById("optionChainTable");
+
+                         // Get the table header row
+                        var headerRow = table.rows[0];
+
+                        // Create a new div element
+                        var div = document.createElement("div");
+
+                        // Set the div element's style
+                        div.style.position = "fixed";
+                        div.style.top = "0";
+                        div.style.display = "none";
+
+                        // Clone the header row and append it to the div element
+                        var clonedHeaderRow = headerRow.cloneNode(true);
+                        div.appendChild(clonedHeaderRow);
+
+                        // Insert the div element before the table
+                        table.parentNode.insertBefore(div, table);
+
+                        // Add a scroll event listener to the window object
+                        window.addEventListener("scroll", function() {
+                        // Check if the user has scrolled past the top of the table
+                        if (window.pageYOffset > table.offsetTop) {
+                            // If so, show the fixed header
+                            div.style.display = "block";
+                        } else {
+                            // Otherwise, hide the fixed header
+                            div.style.display = "none";
+                        }
+                        });
+                }
+
                 function optionchain(){
                     getoptionchaindata();
                     setTimeout(function () {
                                             cleanup();
-                                            }, 6000);
+                                            }, 4000);
                     setTimeout(function () {
                         changeColumnPosition("calls_builtup", 0);
                         changeColumnPosition("calls_volume", 1);
@@ -273,7 +317,7 @@
                         changeColumnPosition("puts_change_oi_value", 10);
                         changeColumnPosition("puts_volume", 11);
                         changeColumnPosition("puts_builtup", 12);
-                                            }, 4000);
+                                            }, 3000);
 
                         setTimeout(function () {
                         changeColumnName("calls_builtup","Call Interpretation");
@@ -289,11 +333,11 @@
                         changeColumnName("calls_ltp", "Call LTP");
                         changeColumnName("puts_ltp", "Put LTP");
                         changeColumnName("strike_price", "Strike Price");
-                        },4000);
+                        },3000);
 
                         setTimeout(function(){
                             changeColor();
-                        }, 5000)
+                        }, 4000)
                         
                         setTimeout(function(){
                         getMaxvalues('Calls Chg OI');
@@ -301,6 +345,11 @@
                         getMaxvalues('Call OI');
                         getMaxvalues('Put OI');
                                 }, 5000)
+
+                        setTimeout(function(){
+                            removerows();
+                            freezeHeader();
+                        }, 6000)
 
                 }
                 function generateciphercode(){
