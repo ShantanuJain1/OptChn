@@ -37,6 +37,7 @@
     <option value="finnifty">FinNifty</option>
     </select>
     <button id="btn">Fetch Data</button><br>
+	<br>
    <div id="container"></div>
    <script>
        optionchain();
@@ -129,7 +130,7 @@
                 document.getElementsByTagName("tr")[1].remove();
                 var rowcounter = (document.getElementsByTagName("tr").length-1);
                 var midrowcounter = Math.round((document.getElementsByTagName("tr").length-1)/2);
-                for(var y=rowcounter+1;  y>=midrowcounter+20; y--){
+                for(var y=rowcounter+1;  y>=midrowcounter+10; y--){
                     document.getElementsByTagName("tr")[y-1].remove();
                 }
             }
