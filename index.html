@@ -301,7 +301,7 @@
                     getoptionchaindata();
                     setTimeout(function () {
                                             cleanup();
-                                            }, 4000);
+                                            }, 6000);
                     setTimeout(function () {
                         changeColumnPosition("calls_builtup", 0);
                         changeColumnPosition("calls_volume", 1);
@@ -317,7 +317,7 @@
                         changeColumnPosition("puts_change_oi_value", 10);
                         changeColumnPosition("puts_volume", 11);
                         changeColumnPosition("puts_builtup", 12);
-                                            }, 3000);
+                                            }, 6000);
 
                         setTimeout(function () {
                         changeColumnName("calls_builtup","Call Interpretation");
@@ -337,19 +337,19 @@
 
                         setTimeout(function(){
                             changeColor();
-                        }, 4000)
+                        }, 6000)
                         
                         setTimeout(function(){
                         getMaxvalues('Calls Chg OI');
                         getMaxvalues('Puts Chg OI');
                         getMaxvalues('Call OI');
                         getMaxvalues('Put OI');
-                                }, 5000)
+                                }, 6000)
 
                         setTimeout(function(){
                             removerows();
                             freezeHeader();
-                        }, 6000)
+                        }, 8000)
 
                 }
                 function generateciphercode(){
