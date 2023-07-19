@@ -2,19 +2,21 @@
 <head>
    <style>
       table, th, td {
-         border: 1px solid black;
+         border: 2px solid rgb(255, 255, 255);
          border-collapse: collapse; 
          text-align: center;
          word-wrap: break-word;
       }
       td, th {
-         padding: 2px;
+         padding: 6px;
       }
       th {
-        font-size: 70%;
+        font-size: 90%;
+        color:rgb(0, 0, 0);
+        background-color:black;
       }
       td{
-         font-size: 80%;
+         font-size: 90%;
       }
       .highlight {
 			background-color: rgb(189, 144, 233);
@@ -31,7 +33,7 @@
          border-radius: 10%;
         }
       #secondhighest{
-         background-color: #4169E1;
+         background-color: #00238d;
          font-size: x-small;
          width: fit-content;
          color:rgb(255, 255, 255);
@@ -53,6 +55,9 @@
          }
       #index{
          padding: 3px;
+         border-radius: 5px;
+         background-color: rgb(76, 76, 76);
+         color: white;
       }
       .spinner {
          margin: auto;
@@ -107,15 +112,15 @@
    </select>
     <!-- <button class="btn" id="btn">Get</button><br> -->
     <br>
+    
    <div id="container"></div>
    <div id="highest">Highest Value</div>
    <div id="secondhighest">Second Highest Value</div>
    <div id="loading">
       <div class="spinner"></div>
     </div>
-    <canvas id="myChart"></canvas>
     <div>
-   <script src="optionchainObfuscated.js">
+   <script src="optionchain2.js">
    </script>   
 </body>
 </html>
