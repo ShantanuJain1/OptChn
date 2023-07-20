@@ -1,1 +1,531 @@
-var _0x4bb082=_0x5cd6;(function(_0x5456c8,_0x38106e){var _0xde37fe=_0x5cd6,_0x586c7c=_0x5456c8();while(!![]){try{var _0x39ee9b=-parseInt(_0xde37fe(0x111))/0x1*(-parseInt(_0xde37fe(0xb8))/0x2)+-parseInt(_0xde37fe(0x11c))/0x3*(-parseInt(_0xde37fe(0xdd))/0x4)+-parseInt(_0xde37fe(0xa1))/0x5+-parseInt(_0xde37fe(0xb4))/0x6+parseInt(_0xde37fe(0xb5))/0x7+-parseInt(_0xde37fe(0xe2))/0x8*(-parseInt(_0xde37fe(0x126))/0x9)+-parseInt(_0xde37fe(0x12a))/0xa;if(_0x39ee9b===_0x38106e)break;else _0x586c7c['push'](_0x586c7c['shift']());}catch(_0x53b6e8){_0x586c7c['push'](_0x586c7c['shift']());}}}(_0x5903,0x22272),document[_0x4bb082(0xac)]('contextmenu',_0x4b5062=>_0x4b5062['preventDefault']()),getoptionchaindata());async function getoptionchaindata(){var _0x3ca42c=_0x4bb082,_0x1ffa74;removeExisitingTable('optionChainTable'),showLoadingIcon();const _0x32694a=document[_0x3ca42c(0x118)](_0x3ca42c(0xc8))[_0x3ca42c(0x121)];console[_0x3ca42c(0xc1)]('INDEX\x20VALUE\x20IS:'+_0x32694a),thrusday=getnearestExpiry(_0x32694a);const _0x43ba6c=_0x3ca42c(0xb7)+_0x32694a+'&expiryDate=',_0x104d23=_0x3ca42c(0x130)+encodeURIComponent(_0x43ba6c);return fetch(_0x104d23,{'method':'GET','headers':{'Accept':_0x3ca42c(0x128)}})[_0x3ca42c(0xe7)](_0x39e216=>_0x39e216[_0x3ca42c(0xbc)]())[_0x3ca42c(0xe7)](_0x59451e=>{var _0x2b34ef=_0x3ca42c;jsonData=_0x59451e[_0x2b34ef(0x124)][_0x2b34ef(0xaf)],headervalue=_0x59451e[_0x2b34ef(0x124)][_0x2b34ef(0xaf)][0x0],_0x1ffa74=_0x59451e[_0x2b34ef(0x124)]['opDatas'][0x0]['index_close'];let _0x3a8fa4=document[_0x2b34ef(0x118)](_0x2b34ef(0xd5)),_0xfa2713=document[_0x2b34ef(0xe9)](_0x2b34ef(0xa0));_0xfa2713[_0x2b34ef(0xd3)]('id',_0x2b34ef(0xeb));let _0x3afa74=Object[_0x2b34ef(0xe6)](headervalue),_0x434e60=document[_0x2b34ef(0xe9)](_0x2b34ef(0xcd)),_0x288969=document['createElement']('tr');var _0x52d069=0x0;_0x3afa74['forEach'](_0x3d75ec=>{var _0x5bc1eb=_0x2b34ef;let _0x5847cf=document['createElement']('th');_0x5847cf[_0x5bc1eb(0xc2)]=_0x3d75ec,_0x288969[_0x5bc1eb(0xde)](_0x5847cf),_0x5847cf[_0x5bc1eb(0xd8)][_0x5bc1eb(0x125)]=_0x5bc1eb(0xee),_0x5847cf[_0x5bc1eb(0xc2)]['bgColor']=_0x5bc1eb(0xfd);}),_0x434e60[_0x2b34ef(0xde)](_0x288969),_0xfa2713[_0x2b34ef(0xd1)](_0x288969),jsonData[_0x2b34ef(0xc6)](_0x513f23=>{var _0x1c423f=_0x2b34ef;let _0x578253=document['createElement']('tr'),_0x4a5276=Object['values'](_0x513f23);var _0x14afab=0x0;_0x4a5276[_0x1c423f(0xc6)](_0x3f16b7=>{var _0x296b84=_0x1c423f;let _0x497678=document[_0x296b84(0xe9)]('td');_0x497678[_0x296b84(0xc2)]=_0x3f16b7,_0x578253[_0x296b84(0xde)](_0x497678),_0x14afab++;}),_0xfa2713[_0x1c423f(0xde)](_0x578253),_0x52d069++;}),_0x3a8fa4[_0x2b34ef(0xde)](_0xfa2713),cleanup(),fnchangecolumnposition(),fnchangecolumnname(),changeColor(_0x1ffa74),removerows(_0x1ffa74,_0x32694a),hideLoadingIcon(),setTimeout(()=>{var _0x5277d2=_0x2b34ef;fngetmaxval(),calculateOIprctchange(),updatetabledata(_0x5277d2(0x10b)),updatetabledata('Call\x20OI'),commavalues();;},0x3e8);});};async function cleanup(){var _0xa5157e=_0x4bb082;console[_0xa5157e(0xc1)](_0xa5157e(0xd7));const _0x4ab807=[_0xa5157e(0x115),_0xa5157e(0x100),_0xa5157e(0xab),_0xa5157e(0xf4),_0xa5157e(0x11e),_0xa5157e(0xae),'puts_net_change',_0xa5157e(0x10d),_0xa5157e(0x116),_0xa5157e(0x12f),'index_close','created_at','call_high',_0xa5157e(0x129),_0xa5157e(0xaa),_0xa5157e(0x106),_0xa5157e(0xc9),_0xa5157e(0xa8),_0xa5157e(0x102),_0xa5157e(0xa6),_0xa5157e(0x120),_0xa5157e(0x123),_0xa5157e(0xb3),_0xa5157e(0xdf),'put_gamma',_0xa5157e(0x9f),_0xa5157e(0xa5),_0xa5157e(0xf8),_0xa5157e(0xf2),_0xa5157e(0xe8),_0xa5157e(0xec),'puts_offer_price','calls_average_price',_0xa5157e(0x12c)];for(var _0x483d14=0x0;_0x483d14<=_0x4ab807[_0xa5157e(0xf5)]-0x1;_0x483d14++){removetabledata(_0x4ab807[_0x483d14]);}}function removetabledata(_0x5a68b0){var _0x2f9c89=_0x4bb082,_0x2b9a90=document['getElementById'](_0x2f9c89(0xeb)),_0x31b4a0=_0x2b9a90['rows'];for(var _0x21f577=0x0;_0x21f577<_0x31b4a0[0x0][_0x2f9c89(0xf3)]['length'];_0x21f577++){var _0x481609=_0x31b4a0[0x0]['cells'][_0x21f577][_0x2f9c89(0x104)];if(_0x481609[_0x2f9c89(0xce)](_0x5a68b0)!=-0x1)for(var _0xa4a3de=0x0;_0xa4a3de<_0x31b4a0[_0x2f9c89(0xf5)];_0xa4a3de++){_0x31b4a0[_0xa4a3de]['deleteCell'](_0x21f577);}}}function updatetabledata(_0x96ffe8){var _0x3a4544=_0x4bb082;const _0x52b176=document[_0x3a4544(0x118)](_0x3a4544(0xc8))[_0x3a4544(0x121)];var _0x53682d=_0x52b176['includes'](_0x3a4544(0xa2))?0x28:_0x52b176[_0x3a4544(0xf9)](_0x3a4544(0xe4))?0x19:0x32,_0x32fab8=document[_0x3a4544(0x118)](_0x3a4544(0xeb)),_0x459942=_0x32fab8[_0x3a4544(0xc4)];for(var _0x1dbf9d=0x0;_0x1dbf9d<_0x459942[0x0]['cells']['length'];_0x1dbf9d++){var _0x36d27a=_0x459942[0x0][_0x3a4544(0xf3)][_0x1dbf9d][_0x3a4544(0x104)];if(_0x36d27a[_0x3a4544(0x10a)](_0x96ffe8)!==-0x1)for(var _0x194de0=0x1;_0x194de0<_0x459942[_0x3a4544(0xf5)];_0x194de0++){var _0x4834e9=parseInt(_0x459942[_0x194de0]['cells'][_0x1dbf9d][_0x3a4544(0xc2)]);_0x459942[_0x194de0][_0x3a4544(0xf3)][_0x1dbf9d][_0x3a4544(0xc2)]=(_0x4834e9/_0x53682d)[_0x3a4544(0x122)](0x0),console[_0x3a4544(0xc1)](_0x3a4544(0xcf)+(_0x4834e9/_0x53682d)[_0x3a4544(0x122)](0x2));}}}function _0x5903(){var _0x10cf99=['puts_average_price','div','Puts\x20Chg\x20OI','time','https://corsproxy.io/?','cloneNode','put_vega','table','840905WKsyXK','fin','StrikePrice','highest','put_theta','call_gamma','toISOString','put_open','calls_ltp','call_open','calls_net_change','addEventListener','DFindashbrd','puts_bid_price','opDatas','hidden','calls_volume','puts_ltp','call_rho','10194KQfiOU','1268708ynXQCO','puts_iv','https://dev-api.niftytrader.in/webapi/option/fatch-option-chain?symbol=','44QpEUIb','getTime','textContent','insertBefore','json','trim','getUTCMinutes','puts_oi','previous_eod_puts_oi','log','innerText','previous_eod_calls_oi','rows','Put\x20Signal','forEach','Call\x20LTP','index','put_low','slice','puts_builtup','getDay','thead','search','Updated\x20cell\x20value:','^NSEI','append','display','setAttribute','btoa','container','secondhighest','Inside\x20CleanUp','style','#DCDCDC','getElementsByTagName','puts_change_oi','calls_change_oi','334808dzGTKI','appendChild','put_delta','none','Changing\x20Column\x20Positions','8EbbFjI','color','bank','strike_price','keys','then','puts_oi_value','createElement','Call\x20Signal','optionChainTable','calls_offer_price','Call\x20OI','gray','block','classList','loading','calls_oi_value','cells','calls_change_oi_value','length','#673147','calls_oi','put_rho','includes','Put\x20IV','Changing\x20Column\x20Name','fixed','white','calls_iv','#4169E1','calls_bid_price','Call\x20IV','call_delta','Call\x20Volume','innerHTML','Calls\x20Chg\x20OI','put_high','removeChild','add','\x20(0%)','indexOf','Put\x20OI','^NSEBANK','puts_change_oi_value','position','push','toLocaleString','3576QjpvkY','Strike\x20Price','puts_volume','backgroundColor','calls_ask_price','expiry_date','finnifty','getElementById','parentNode','#ADD8E6','sort','9uKzkOK','round','puts_ask_price','remove','call_vega','value','toFixed','call_theta','resultData','background','2359251jgvvBW','NIFTY_FIN_SERVICE.NS','application/json','call_low','4633910YudJCL','Put\x20LTP'];_0x5903=function(){return _0x10cf99;};return _0x5903();}function changeColumnPosition(_0x42d6af,_0x4a09f0){var _0x237904=_0x4bb082,_0x294e37=document[_0x237904(0x118)](_0x237904(0xeb)),_0x5e5270=_0x294e37[_0x237904(0xc4)][0x0],_0x5b45ca=-0x1;for(var _0x47c356=0x0;_0x47c356<_0x5e5270[_0x237904(0xf3)][_0x237904(0xf5)];_0x47c356++){if(_0x5e5270[_0x237904(0xf3)][_0x47c356]['innerText']===_0x42d6af){_0x5b45ca=_0x47c356;break;}}if(_0x5b45ca!==-0x1)for(var _0x431a70=0x0;_0x431a70<_0x294e37[_0x237904(0xc4)][_0x237904(0xf5)];_0x431a70++){var _0x1ce8b6=_0x294e37[_0x237904(0xc4)][_0x431a70],_0x33f0af=_0x1ce8b6[_0x237904(0x107)](_0x1ce8b6['cells'][_0x5b45ca]);_0x1ce8b6[_0x237904(0xbb)](_0x33f0af,_0x1ce8b6[_0x237904(0xf3)][_0x4a09f0]);}}function changeColor(_0xf71853){var _0x3c068e=_0x4bb082,_0x142b48=document[_0x3c068e(0x118)](_0x3c068e(0xeb)),_0x3b8437='';const _0x23e62e=document[_0x3c068e(0x118)](_0x3c068e(0xc8))['value'];if(_0x23e62e[_0x3c068e(0xf9)](_0x3c068e(0xe4)))_0x3b8437=_0x3c068e(0x10c),roundnumber=0x64;else _0x23e62e[_0x3c068e(0xf9)]('fin')?(_0x3b8437=_0x3c068e(0x127),roundnumber=0x32):(_0x3b8437=_0x3c068e(0xd0),roundnumber=0x32);var _0x30dc78=parseInt(Math['round'](_0xf71853/roundnumber)*roundnumber);for(var _0x3ef28f=0x0;_0x3ef28f<_0x142b48['rows'][_0x3c068e(0xf5)];_0x3ef28f++){var _0x864501=_0x142b48['rows'][_0x3ef28f],_0x239192=_0x864501['cells'][0x6][_0x3c068e(0xc2)];_0x864501['cells'][0x6][_0x3c068e(0xd8)][_0x3c068e(0x114)]=_0x3c068e(0xee);_0x239192['includes'](_0x30dc78)&&(_0x864501[_0x3c068e(0xd8)][_0x3c068e(0x114)]='yellow',_0x864501[_0x3c068e(0xf3)][0x6]['color']=_0x3c068e(0xfd));if(parseInt(_0x239192)<_0x30dc78){_0x864501[_0x3c068e(0xd8)][_0x3c068e(0x125)]='#DCDCDC';for(var _0x2b6932=0x7;_0x2b6932<=_0x864501[_0x3c068e(0xf3)]['length']-0x1;_0x2b6932++){_0x864501[_0x3c068e(0xf3)][_0x2b6932][_0x3c068e(0xd8)]['backgroundColor']=_0x3c068e(0x11a);}}if(parseInt(_0x239192)>_0x30dc78){_0x864501[_0x3c068e(0xd8)][_0x3c068e(0x114)]=_0x3c068e(0x11a);for(var _0x2b6932=0x7;_0x2b6932<=_0x864501['cells'][_0x3c068e(0xf5)]-0x1;_0x2b6932++){_0x864501[_0x3c068e(0xf3)][_0x2b6932][_0x3c068e(0xd8)][_0x3c068e(0x114)]=_0x3c068e(0xd9);}}}}function changeColumnName(_0x598a71,_0x82cea8){var _0x12f242=_0x4bb082;const _0x1f7326=document[_0x12f242(0x118)](_0x12f242(0xeb)),_0x4af337=_0x1f7326[_0x12f242(0xda)]('th');for(let _0x2a4363=0x0;_0x2a4363<_0x4af337[_0x12f242(0xf5)];_0x2a4363++){if(_0x4af337[_0x2a4363][_0x12f242(0x104)]===_0x598a71){_0x4af337[_0x2a4363]['innerHTML']=_0x82cea8;break;}}}function removeExisitingTable(_0x32e125){var _0x57235c=_0x4bb082;const _0x1ca3c9=document[_0x57235c(0x118)](_0x32e125);if(_0x1ca3c9){const _0x83ff0e=_0x1ca3c9[_0x57235c(0x119)];_0x83ff0e[_0x57235c(0x107)](_0x1ca3c9);}}function removerows(_0x2058e1,_0x3fa896){var _0x272ab1=_0x4bb082,_0x121363=document[_0x272ab1(0x118)]('optionChainTable'),_0x2d813f=0x0;_0x3fa896[_0x272ab1(0xf9)](_0x272ab1(0xe4))?_0x2d813f=0x7d0:_0x2d813f=0x3e8;const _0x224878=parseInt(Math['round'](_0x2058e1/roundnumber)*roundnumber)-_0x2d813f,_0x93606c=parseInt(Math[_0x272ab1(0x11d)](_0x2058e1/roundnumber)*roundnumber)+_0x2d813f;var _0x3ed760=0x0,_0x4813b5=0x0;for(var _0x5d9bf7=0x0;_0x5d9bf7<_0x121363[_0x272ab1(0xc4)][_0x272ab1(0xf5)];_0x5d9bf7++){var _0x5b3975=_0x121363['rows'][_0x5d9bf7],_0x4805a9=_0x5b3975['cells'][0x6][_0x272ab1(0xc2)];parseInt(_0x4805a9)<_0x224878&&_0x3ed760++,parseInt(_0x4805a9)>_0x93606c&&_0x4813b5++;}for(var _0x44ca24=0x1;_0x44ca24<=_0x3ed760;_0x44ca24++){document[_0x272ab1(0xda)]('tr')[0x1]['remove']();}for(var _0x1c87de=0x1;_0x1c87de<=_0x4813b5;_0x1c87de++){var _0x3a8d2c=document[_0x272ab1(0xda)]('tr')['length'];document[_0x272ab1(0xda)]('tr')[_0x3a8d2c-0x1]['remove']();}}function freezeHeader(){var _0x7e020f=_0x4bb082,_0x5bba46=document[_0x7e020f(0x118)](_0x7e020f(0xeb)),_0x8d4cfb=_0x5bba46[_0x7e020f(0xc4)][0x0],_0x942361=document[_0x7e020f(0xe9)](_0x7e020f(0x12d));_0x942361['style'][_0x7e020f(0x10e)]=_0x7e020f(0xfc),_0x942361[_0x7e020f(0xd8)]['top']='0',_0x942361[_0x7e020f(0xd8)][_0x7e020f(0xd2)]=_0x7e020f(0xe0);var _0x54a20b=_0x8d4cfb[_0x7e020f(0x131)](!![]);_0x942361[_0x7e020f(0xde)](_0x54a20b),_0x5bba46[_0x7e020f(0x119)][_0x7e020f(0xbb)](_0x942361,_0x5bba46),window['addEventListener']('scroll',function(){var _0x4cfc17=_0x7e020f;window['pageYOffset']>_0x5bba46['offsetTop']?_0x942361[_0x4cfc17(0xd8)]['display']=_0x4cfc17(0xef):_0x942361[_0x4cfc17(0xd8)]['display']='none';});}function fnchangecolumnposition(){var _0xc2ec00=_0x4bb082;console[_0xc2ec00(0xc1)](_0xc2ec00(0xe1)),changeColumnPosition('calls_builtup',0x0),changeColumnPosition(_0xc2ec00(0xf7),0x1),changeColumnPosition(_0xc2ec00(0xdc),0x2),changeColumnPosition(_0xc2ec00(0xb1),0x3),changeColumnPosition(_0xc2ec00(0xfe),0x4),changeColumnPosition('calls_ltp',0x5),changeColumnPosition(_0xc2ec00(0xe5),0x6),changeColumnPosition(_0xc2ec00(0xb2),0x7),changeColumnPosition(_0xc2ec00(0xb6),0x8),changeColumnPosition(_0xc2ec00(0x113),0x9),changeColumnPosition(_0xc2ec00(0xdb),0xa),changeColumnPosition(_0xc2ec00(0xbf),0xb),changeColumnPosition(_0xc2ec00(0xcb),0xc);}function fnchangecolumnname(){var _0x2440b5=_0x4bb082;console[_0x2440b5(0xc1)](_0x2440b5(0xfb)),changeColumnName('calls_builtup',_0x2440b5(0xea)),changeColumnName('puts_builtup',_0x2440b5(0xc5)),changeColumnName('calls_volume',_0x2440b5(0x103)),changeColumnName(_0x2440b5(0x113),'Put\x20Volume'),changeColumnName(_0x2440b5(0xdc),_0x2440b5(0x105)),changeColumnName('puts_change_oi',_0x2440b5(0x12e)),changeColumnName('calls_iv',_0x2440b5(0x101)),changeColumnName('puts_iv',_0x2440b5(0xfa)),changeColumnName(_0x2440b5(0xbf),_0x2440b5(0x10b)),changeColumnName(_0x2440b5(0xf7),_0x2440b5(0xed)),changeColumnName(_0x2440b5(0xa9),_0x2440b5(0xc7)),changeColumnName(_0x2440b5(0xb2),_0x2440b5(0x12b)),changeColumnName(_0x2440b5(0xe5),_0x2440b5(0x112));}function _0x5cd6(_0xc59c84,_0x4ced5b){var _0x59038b=_0x5903();return _0x5cd6=function(_0x5cd688,_0x336fe2){_0x5cd688=_0x5cd688-0x9f;var _0xaf67ed=_0x59038b[_0x5cd688];return _0xaf67ed;},_0x5cd6(_0xc59c84,_0x4ced5b);}function fngetmaxval(){var _0x5a1ee9=_0x4bb082;getMaxvalues('Calls\x20Chg\x20OI'),getMaxvalues('Puts\x20Chg\x20OI'),getMaxvalues(_0x5a1ee9(0xed)),getMaxvalues(_0x5a1ee9(0x10b));}function generateciphercode(){var _0x32b67f=_0x4bb082;const _0x2e0029=new Date()[_0x32b67f(0xbe)]();var _0x3bee18=window[_0x32b67f(0xd4)](_0x2e0029+_0x32b67f(0xad)),_0x46055c=document[_0x32b67f(0x118)]('cipher');return _0x3bee18;}function getMaxvalues(_0x1646ad){var _0x3e0878=_0x4bb082,_0x527d8c=document[_0x3e0878(0x118)]('optionChainTable');const _0x50b30e=[];var _0x4701a1=-0x1;for(var _0x54cab2=0x0;_0x54cab2<_0x527d8c[_0x3e0878(0xc4)][0x0][_0x3e0878(0xf3)][_0x3e0878(0xf5)];_0x54cab2++){if(_0x527d8c[_0x3e0878(0xc4)][0x0][_0x3e0878(0xf3)][_0x54cab2]['innerHTML']===_0x1646ad){_0x4701a1=_0x54cab2;break;}}var _0x434a0f=-Infinity;for(var _0x54cab2=0x1;_0x54cab2<_0x527d8c[_0x3e0878(0xc4)]['length'];_0x54cab2++){var _0x3262a2=parseInt(_0x527d8c['rows'][_0x54cab2][_0x3e0878(0xf3)][_0x4701a1][_0x3e0878(0x104)]);_0x3262a2>_0x434a0f&&(_0x434a0f=_0x3262a2);}for(var _0x54cab2=0x1;_0x54cab2<_0x527d8c[_0x3e0878(0xc4)][_0x3e0878(0xf5)];_0x54cab2++){var _0x3262a2=parseInt(_0x527d8c[_0x3e0878(0xc4)][_0x54cab2]['cells'][_0x4701a1][_0x3e0878(0x104)]);_0x3262a2===_0x434a0f&&(_0x527d8c[_0x3e0878(0xc4)][_0x54cab2]['cells'][_0x4701a1][_0x3e0878(0xd8)][_0x3e0878(0x114)]=_0x3e0878(0xf6),_0x527d8c['rows'][_0x54cab2][_0x3e0878(0xf3)][_0x4701a1][_0x3e0878(0xd8)][_0x3e0878(0xe3)]='white');}if(_0x4701a1!==-0x1){for(let _0x70353e=0x1;_0x70353e<_0x527d8c[_0x3e0878(0xc4)][_0x3e0878(0xf5)];_0x70353e++){const _0xc6f52d=parseFloat(_0x527d8c[_0x3e0878(0xc4)][_0x70353e][_0x3e0878(0xf3)][_0x4701a1]['textContent']);_0x50b30e[_0x3e0878(0x10f)](_0xc6f52d);}const _0x3b0bbd=_0x50b30e[_0x3e0878(0x11b)]((_0x5ba76e,_0x1d66bd)=>_0x1d66bd-_0x5ba76e),_0x2fdf02=_0x3b0bbd[0x1];for(let _0x53a009=0x1;_0x53a009<_0x527d8c[_0x3e0878(0xc4)]['length'];_0x53a009++){const _0x2d2e85=parseFloat(_0x527d8c[_0x3e0878(0xc4)][_0x53a009][_0x3e0878(0xf3)][_0x4701a1]['textContent']);_0x2d2e85===_0x2fdf02&&(_0x527d8c[_0x3e0878(0xc4)][_0x53a009]['cells'][_0x4701a1][_0x3e0878(0xd8)][_0x3e0878(0x114)]=_0x3e0878(0xff),_0x527d8c[_0x3e0878(0xc4)][_0x53a009][_0x3e0878(0xf3)][_0x4701a1]['style']['color']=_0x3e0878(0xfd));}}for(var _0x54cab2=0x0;_0x54cab2<_0x527d8c[_0x3e0878(0xc4)][0x0][_0x3e0878(0xf3)][_0x3e0878(0xf5)];_0x54cab2++){if(_0x527d8c[_0x3e0878(0xc4)][0x0][_0x3e0878(0xf3)][_0x54cab2][_0x3e0878(0x104)]===_0x3e0878(0x112)){_0x4701a1=_0x54cab2;break;}}for(var _0x54cab2=0x1;_0x54cab2<_0x527d8c[_0x3e0878(0xc4)]['length'];_0x54cab2++){_0x527d8c[_0x3e0878(0xc4)][_0x54cab2][_0x3e0878(0xf3)][_0x4701a1][_0x3e0878(0xf0)][_0x3e0878(0x108)](_0x3e0878(0xa3));}}function showLoadingIcon(){var _0x4f726e=_0x4bb082;document['getElementById'](_0x4f726e(0xf1))[_0x4f726e(0xf0)][_0x4f726e(0x11f)]('hidden'),document[_0x4f726e(0x118)](_0x4f726e(0xa4))['classList']['add'](_0x4f726e(0xb0)),document[_0x4f726e(0x118)](_0x4f726e(0xd6))[_0x4f726e(0xf0)][_0x4f726e(0x108)](_0x4f726e(0xb0));}function hideLoadingIcon(){var _0xed878d=_0x4bb082;document[_0xed878d(0x118)](_0xed878d(0xf1))[_0xed878d(0xf0)][_0xed878d(0x108)]('hidden'),document['getElementById'](_0xed878d(0xa4))[_0xed878d(0xf0)]['remove']('hidden'),document[_0xed878d(0x118)](_0xed878d(0xd6))[_0xed878d(0xf0)][_0xed878d(0x11f)](_0xed878d(0xb0));}function commavalues(){var _0x330ac8=_0x4bb082;const _0x5ad77f=document[_0x330ac8(0x118)](_0x330ac8(0xeb));for(let _0x5e0a2a=0x0;_0x5e0a2a<_0x5ad77f['rows'][_0x330ac8(0xf5)];_0x5e0a2a++){const _0x59c417=_0x5ad77f[_0x330ac8(0xc4)][_0x5e0a2a][_0x330ac8(0xf3)];for(let _0x2cd89d=0x0;_0x2cd89d<_0x59c417[_0x330ac8(0xf5)];_0x2cd89d++){const _0x42bee5=_0x59c417[_0x2cd89d][_0x330ac8(0x104)][_0x330ac8(0xbd)]();if(!isNaN(_0x42bee5)&&Number(_0x42bee5)>0x3e8){const _0x1042b3=Number(_0x42bee5)[_0x330ac8(0x110)]('en-IN');_0x59c417[_0x2cd89d][_0x330ac8(0x104)]=_0x1042b3;}}}}function getnearestExpiry(_0xaf0ee0){var _0x49e3b2=_0x4bb082,_0x51ad7e;let _0x2d77a4=new Date(),_0x1e11f7=_0x2d77a4[_0x49e3b2(0xcc)]();if(_0xaf0ee0[_0x49e3b2(0xf9)](_0x49e3b2(0x117))){let _0x154ded=(0x2-_0x1e11f7+0x7)%0x7,_0x4029a9=new Date(_0x2d77a4['getTime']()+_0x154ded*0x5265c00);_0x51ad7e=_0x4029a9[_0x49e3b2(0xa7)]()[_0x49e3b2(0xca)](0x0,0xa);}else{let _0x3851ac=(0xb-_0x1e11f7)%0x7,_0x3cba7f=new Date(_0x2d77a4[_0x49e3b2(0xb9)]()+_0x3851ac*0x5265c00);_0x51ad7e=_0x3cba7f['toISOString']()[_0x49e3b2(0xca)](0x0,0xa);}return _0x51ad7e;}function calculateOIprctchange(){var _0x561c2c=_0x4bb082;let _0x57d098=document[_0x561c2c(0x118)](_0x561c2c(0xeb)),_0xa422e6=_0x57d098[_0x561c2c(0xc4)],_0x2b9c61=_0xa422e6[0x0][_0x561c2c(0xf3)],_0x37633b,_0x16cad2;for(let _0x3be08c=0x0;_0x3be08c<_0x2b9c61[_0x561c2c(0xf5)];_0x3be08c++){_0x2b9c61[_0x3be08c][_0x561c2c(0xba)]===_0x561c2c(0xc3)&&(_0x37633b=_0x3be08c),_0x2b9c61[_0x3be08c][_0x561c2c(0xba)]==='Call\x20OI'&&(_0x16cad2=_0x3be08c);}for(let _0x322a49=0x1;_0x322a49<_0xa422e6['length'];_0x322a49++){let _0x36bbfb=parseFloat(_0xa422e6[_0x322a49][_0x561c2c(0xf3)][_0x37633b][_0x561c2c(0xc2)]),_0x8ef2db=parseFloat(_0xa422e6[_0x322a49][_0x561c2c(0xf3)][_0x16cad2][_0x561c2c(0xc2)]),_0x56fa38=(_0x8ef2db-_0x36bbfb)/_0x36bbfb*0x64;_0xa422e6[_0x322a49][_0x561c2c(0xf3)][_0x16cad2][_0x561c2c(0xba)]=_0x8ef2db+'\x20('+_0x56fa38[_0x561c2c(0x122)](0x1)+'%'+')';}for(let _0xce9d49=0x0;_0xce9d49<_0x2b9c61[_0x561c2c(0xf5)];_0xce9d49++){_0x2b9c61[_0xce9d49]['textContent']===_0x561c2c(0xc0)&&(col3=_0xce9d49),_0x2b9c61[_0xce9d49][_0x561c2c(0xba)]===_0x561c2c(0x10b)&&(col4=_0xce9d49);}for(let _0x1dcde6=0x1;_0x1dcde6<_0xa422e6['length'];_0x1dcde6++){let _0xa4e60=parseFloat(_0xa422e6[_0x1dcde6][_0x561c2c(0xf3)][col3][_0x561c2c(0xc2)]),_0x42dd0c=parseFloat(_0xa422e6[_0x1dcde6]['cells'][col4][_0x561c2c(0xc2)]),_0x54c772=(_0x42dd0c-_0xa4e60)/_0xa4e60*0x64;_0x54c772==0x0?_0xa422e6[_0x1dcde6][_0x561c2c(0xf3)][col4][_0x561c2c(0xba)]=_0x42dd0c+_0x561c2c(0x109):_0xa422e6[_0x1dcde6][_0x561c2c(0xf3)][col4]['textContent']=_0x42dd0c+'\x20('+_0x54c772[_0x561c2c(0x122)](0x1)+'%'+')';}removetabledata(_0x561c2c(0xc0)),removetabledata('previous_eod_calls_oi');}
+document.addEventListener('contextmenu', event => event.preventDefault());
+
+getoptionchaindata();
+
+async function getoptionchaindata() {
+    var closingprice;
+    removeExisitingTable('optionChainTable');
+    showLoadingIcon();
+
+    const index = document.getElementById('index').value;
+    console.log("INDEX VALUE IS:"+index);
+
+    thrusday = getnearestExpiry(index);
+    const uri = `https://dev-api.niftytrader.in/webapi/option/fatch-option-chain?symbol=${index}&expiryDate=`
+    const url = 'https://corsproxy.io/?'+uri;
+    return fetch(url, {
+        method: 'GET',
+        headers: {
+            'Accept': 'application/json',
+        },
+    })
+        .then(response => response.json())
+        .then((response) => {
+            jsonData = response['resultData']['opDatas'];
+            headervalue = response['resultData']['opDatas'][0];
+            closingprice = response['resultData']['opDatas'][0]['index_close']
+            // Get the container element where the table will be inserted
+            let container = document.getElementById("container");
+
+            // Create the table element
+            let table = document.createElement("table");
+            table.setAttribute("id", "optionChainTable");
+
+            // Get the keys (column names) of the first object in the JSON data
+            let cols = Object.keys(headervalue);
+
+            // Create the header element
+            let thead = document.createElement("thead");
+            let tr = document.createElement("tr");
+            var rowcount = 0;
+            // Loop through the column names and create header cells
+            cols.forEach((item) => {
+                let th = document.createElement("th");
+                th.innerText = item; // Set the column name as the text of the header cell
+                tr.appendChild(th); // Append the header cell to the header row
+                th.style.background = "gray";
+                th.innerText.bgColor = "white";
+
+            });
+            thead.appendChild(tr); // Append the header row to the header
+            table.append(tr) // Append the header to the table
+
+            // Loop through the JSON data and create table rows
+            jsonData.forEach((item) => {
+                let tr = document.createElement("tr");
+
+                // Get the values of the current object in the JSON data
+                let vals = Object.values(item);
+
+                // Loop through the values and create table cells
+                var colcount = 0;
+                vals.forEach((elem) => {
+                    let td = document.createElement("td");
+
+                    td.innerText = elem;
+
+                    // Set the value as the text of the table cell
+                    tr.appendChild(td); // Append the table cell to the table row
+                    colcount++;
+                });
+                table.appendChild(tr); // Append the table row to the table
+                rowcount++;
+            });
+            container.appendChild(table) // Append the table to the container element
+                cleanup();
+                fnchangecolumnposition();
+                fnchangecolumnname();
+                changeColor(closingprice);
+                removerows(closingprice, index);
+    
+                
+                hideLoadingIcon();
+                setTimeout(() => {
+                    fngetmaxval();
+                    calculateOIprctchange();
+                    updatetabledata("Put OI");
+                    updatetabledata("Call OI");
+                    commavalues();
+                 ;},1000);
+        })
+};
+
+
+async function cleanup() {
+    console.log("Inside CleanUp");
+    const removelist = ["calls_ask_price", "calls_bid_price", "calls_net_change", "calls_change_oi_value",
+        "puts_ask_price", "puts_bid_price", "puts_net_change", "puts_change_oi_value",
+        "expiry_date", "time", "index_close", "created_at", "call_high", "call_low"
+        , "call_open", "put_high", "put_low", "put_open",
+        "call_delta", "call_gamma", "call_vega", "call_theta",
+        "call_rho", "put_delta", "put_gamma", "put_vega", "put_theta", "put_rho", "calls_oi_value"
+        , "puts_oi_value", "calls_offer_price", "puts_offer_price",
+        // "calls_average_price", "puts_average_price", "previous_eod_calls_oi","previous_eod_puts_oi"];
+        "calls_average_price", "puts_average_price"];
+
+    for (var j = 0; j <= removelist.length - 1; j++) {
+        removetabledata(removelist[j]);
+    }
+}
+function removetabledata(columnname) {
+    var tble = document.getElementById('optionChainTable');
+    var row = tble.rows; // Getting the rows
+
+    for (var i = 0; i < row[0].cells.length; i++) {
+
+        // Getting the text of columnName
+        var str = row[0].cells[i].innerHTML;
+
+        // If 'Geek_id' matches with the columnName 
+        if (str.search(columnname) != -1) {
+            for (var j = 0; j < row.length; j++) {
+
+                // Deleting the ith cell of each row
+                row[j].deleteCell(i);
+            }
+        }
+    }
+}
+
+function updatetabledata(columnname) {
+    const index = document.getElementById('index').value;
+    var value = index.includes("fin") ? 40 : index.includes("bank") ? 25 : 50;    
+    var tble = document.getElementById('optionChainTable');
+    var row = tble.rows; // Getting the rows
+
+    for (var i = 0; i < row[0].cells.length; i++) {
+
+        // Getting the text of columnName
+        var str = row[0].cells[i].innerHTML;
+
+        // If 'Put OI' matches with the columnName
+        if (str.indexOf(columnname) !== -1) {
+            for (var j = 1; j < row.length; j++) { // Start from j = 1 to skip the header row
+
+                // Get the cell value and divide by 50
+                var cellValue = parseInt(row[j].cells[i].innerText); // Assuming the value is an integer
+                row[j].cells[i].innerText = (cellValue / value).toFixed(0); // Set the new value back to the cell
+                console.log("Updated cell value:" + (cellValue / value).toFixed(2));
+            }
+        }
+    }
+}
+
+
+function changeColumnPosition(columnName, index) {
+    // get reference to the table element
+    var table = document.getElementById("optionChainTable");
+
+    // get reference to the header row
+    var headerRow = table.rows[0];
+
+    // loop through the header cells to find the index of the clicked column
+    var columnIndex = -1;
+    for (var i = 0; i < headerRow.cells.length; i++) {
+        if (headerRow.cells[i].innerText === columnName) {
+            columnIndex = i;
+            break;
+        }
+    }
+
+    // move the column to the front
+    if (columnIndex !== -1) {
+        for (var j = 0; j < table.rows.length; j++) {
+            var row = table.rows[j];
+            var cell = row.removeChild(row.cells[columnIndex]);
+            row.insertBefore(cell, row.cells[index]);
+        }
+    }
+}
+
+function changeColor(closeprice) {
+    var table = document.getElementById("optionChainTable");
+
+    var indexvalue = "";
+    const index = document.getElementById('index').value;
+    if (index.includes('bank')) {
+        indexvalue = '^NSEBANK';
+        roundnumber = 100;
+    } else if (index.includes('fin')) {
+        indexvalue = 'NIFTY_FIN_SERVICE.NS';
+        roundnumber = 50;
+    }
+    else {
+        indexvalue = '^NSEI'
+        roundnumber = 50;
+    }
+    var closingprice = parseInt(Math.round(closeprice / roundnumber) * roundnumber);
+    for (var i = 0; i < table.rows.length; i++) {
+        var row = table.rows[i];
+
+        // get the cell value of the first cell in the row
+        var cellValue = row.cells[6].innerText;
+        row.cells[6].style.backgroundColor = "gray";
+        if (cellValue.includes(closingprice)) {
+            // highlight the row
+            row.style.backgroundColor = "yellow";
+            row.cells[6].color="white";
+        }
+        if( parseInt(cellValue)< closingprice){
+            row.style.background = '#DCDCDC';
+            for(var j=7; j<=row.cells.length-1;j++){
+                row.cells[j].style.backgroundColor = "#ADD8E6";
+            }
+        }
+        if( parseInt(cellValue)> closingprice){
+            row.style.backgroundColor = "#ADD8E6";
+            for(var j=7; j<=row.cells.length-1;j++){
+                row.cells[j].style.backgroundColor = '#DCDCDC';
+            }
+        }
+    }
+}
+
+function changeColumnName(oldName, newName) {
+    const table = document.getElementById('optionChainTable');
+
+    // Change the column header name
+    const headers = table.getElementsByTagName('th');
+    for (let i = 0; i < headers.length; i++) {
+        if (headers[i].innerHTML === oldName) {
+            headers[i].innerHTML = newName;
+            break;
+        }
+    }
+}
+
+function removeExisitingTable(elementid) {
+    const element = document.getElementById(elementid);
+
+    // Check if the element exists
+    if (element) {
+        // Get the parent element
+        const parent = element.parentNode;
+
+        // Remove the element from the parent
+        parent.removeChild(element);
+    }
+}
+
+function removerows(closeprice, index) {
+    var table = document.getElementById("optionChainTable");
+    var value =0;
+    if(index.includes("bank")){
+        value = 2000;
+    } else{
+        value = 1000;
+    }
+    const lowerrange = parseInt(Math.round(closeprice / roundnumber) * roundnumber)-value;
+    const higherrange = parseInt(Math.round(closeprice / roundnumber) * roundnumber)+value;
+    var lowerrangecounter = 0;
+    var higherrangecounter =0;
+
+    for (var i = 0; i < table.rows.length; i++) {
+        var row = table.rows[i];
+        var cellValue = row.cells[6].innerText;
+        if(parseInt(cellValue)< lowerrange){
+            lowerrangecounter++;
+        }
+        if(parseInt(cellValue) > higherrange){
+            higherrangecounter++;
+        }
+    }
+    for(var j=1; j<=lowerrangecounter;j++){
+        document.getElementsByTagName("tr")[1].remove();
+    }
+    for(var y=1; y<=higherrangecounter;y++){
+        var rowsize = document.getElementsByTagName("tr").length;
+        document.getElementsByTagName("tr")[rowsize-1].remove();
+    }
+}
+
+function freezeHeader() {
+    // Get the table element
+    var table = document.getElementById("optionChainTable");
+
+    // Get the table header row
+    var headerRow = table.rows[0];
+
+    // Create a new div element
+    var div = document.createElement("div");
+
+    // Set the div element's style
+    div.style.position = "fixed";
+    div.style.top = "0";
+    div.style.display = "none";
+
+    // Clone the header row and append it to the div element
+    var clonedHeaderRow = headerRow.cloneNode(true);
+    div.appendChild(clonedHeaderRow);
+
+    // Insert the div element before the table
+    table.parentNode.insertBefore(div, table);
+
+    // Add a scroll event listener to the window object
+    window.addEventListener("scroll", function () {
+        // Check if the user has scrolled past the top of the table
+        if (window.pageYOffset > table.offsetTop) {
+            // If so, show the fixed header
+            div.style.display = "block";
+        } else {
+            // Otherwise, hide the fixed header
+            div.style.display = "none";
+        }
+    });
+}
+
+function fnchangecolumnposition() {
+    console.log("Changing Column Positions");
+    changeColumnPosition("calls_builtup", 0);
+    changeColumnPosition("calls_oi", 1);
+    changeColumnPosition("calls_change_oi", 2);
+    changeColumnPosition("calls_volume", 3);
+    changeColumnPosition("calls_iv", 4);
+    changeColumnPosition("calls_ltp", 5);
+    changeColumnPosition("strike_price", 6);
+    changeColumnPosition("puts_ltp", 7);
+    changeColumnPosition("puts_iv", 8);
+    changeColumnPosition("puts_volume", 9);
+    changeColumnPosition("puts_change_oi", 10);
+    changeColumnPosition("puts_oi", 11);
+    changeColumnPosition("puts_builtup", 12);
+}
+
+function fnchangecolumnname() {
+    console.log("Changing Column Name");
+    changeColumnName("calls_builtup", "Call Signal");
+    changeColumnName("puts_builtup", "Put Signal");
+    changeColumnName("calls_volume", "Call Volume");
+    changeColumnName("puts_volume", "Put Volume");
+    changeColumnName("calls_change_oi", "Calls Chg OI");
+    changeColumnName("puts_change_oi", "Puts Chg OI");
+    changeColumnName("calls_iv", "Call IV");
+    changeColumnName("puts_iv", "Put IV");
+    changeColumnName("puts_oi", "Put OI");
+    changeColumnName("calls_oi", "Call OI");
+    changeColumnName("calls_ltp", "Call LTP");
+    changeColumnName("puts_ltp", "Put LTP");
+    changeColumnName("strike_price", "Strike Price");
+}
+
+function fngetmaxval() {
+    getMaxvalues('Calls Chg OI');
+    getMaxvalues('Puts Chg OI');
+    getMaxvalues('Call OI');
+    getMaxvalues('Put OI');
+}
+
+function generateciphercode() {
+    const min = new Date().getUTCMinutes();
+    var encrypted = window.btoa(min + "DFindashbrd");
+    var cipherkey = document.getElementById("cipher");
+    return encrypted;
+}
+
+function getMaxvalues(columnName) {
+    var table = document.getElementById("optionChainTable");
+    const values = [];
+    // Find the column index of the column to search
+    var columnIndex = -1;
+    for (var i = 0; i < table.rows[0].cells.length; i++) {
+        if (table.rows[0].cells[i].innerHTML === columnName) {
+            columnIndex = i;
+            break;
+        }
+    }
+
+    // Iterate through the rows to find the max value in the column
+    var maxValue = -Infinity;
+    for (var i = 1; i < table.rows.length; i++) {
+        var cellValue = parseInt(table.rows[i].cells[columnIndex].innerHTML);
+        if (cellValue > maxValue) {
+            maxValue = cellValue;
+        }
+    }
+
+    // Highlight the cells with the max value
+    for (var i = 1; i < table.rows.length; i++) {
+        var cellValue = parseInt(table.rows[i].cells[columnIndex].innerHTML);
+        if (cellValue === maxValue) {
+            // table.rows[i].cells[columnIndex].classList.add("highlight");
+            table.rows[i].cells[columnIndex].style.backgroundColor = "#673147";
+            table.rows[i].cells[columnIndex].style.color = "white";
+        }
+    }
+    if (columnIndex !== -1) {
+        // Find the second highest value in the specified column
+        for (let i = 1; i < table.rows.length; i++) {
+            const value = parseFloat(table.rows[i].cells[columnIndex].textContent);
+            values.push(value);
+        }
+
+        const sortedValues = values.sort((a, b) => b - a);
+        const secondHighest = sortedValues[1];
+
+        // Highlight the row(s) with the second highest value in the specified column
+        for (let i = 1; i < table.rows.length; i++) {
+            const cellValue = parseFloat(table.rows[i].cells[columnIndex].textContent);
+            if (cellValue === secondHighest) {
+                // table.rows[i].cells[columnIndex].classList.add("hlt");
+                table.rows[i].cells[columnIndex].style.backgroundColor = "#4169E1";
+                table.rows[i].cells[columnIndex].style.color = "white";
+            }
+        }
+    }
+
+    //Changing color of Strike Price Column
+    for (var i = 0; i < table.rows[0].cells.length; i++) {
+        if (table.rows[0].cells[i].innerHTML === "Strike Price") {
+            columnIndex = i;
+            break;
+        }
+    }
+
+    // Iterate through the rows and highlight the cells in the column
+    for (var i = 1; i < table.rows.length; i++) {
+        table.rows[i].cells[columnIndex].classList.add("StrikePrice");
+    }
+}
+
+// Show the loading icon
+function showLoadingIcon() {
+    document.getElementById("loading").classList.remove("hidden");
+    document.getElementById("highest").classList.add("hidden")
+    document.getElementById("secondhighest").classList.add("hidden")
+}
+
+// Hide the loading icon
+function hideLoadingIcon() {
+    document.getElementById("loading").classList.add("hidden");
+    document.getElementById("highest").classList.remove("hidden")
+    document.getElementById("secondhighest").classList.remove("hidden")
+}
+
+function commavalues() {
+    const table = document.getElementById("optionChainTable");
+
+    // Loop through all the cells in the table
+    for (let i = 0; i < table.rows.length; i++) {
+        const cells = table.rows[i].cells;
+        for (let j = 0; j < cells.length; j++) {
+            const cellValue = cells[j].innerHTML.trim();
+            // Check if the cell value is a number greater than 1000
+            if (!isNaN(cellValue) && Number(cellValue) > 1000) {
+                // Add commas to the number
+                const formattedValue = Number(cellValue).toLocaleString('en-IN');
+                cells[j].innerHTML = formattedValue;
+            }
+        }
+    }
+}
+
+function getnearestExpiry(index){
+    var day;
+    let currentDate = new Date();
+    // Get the current day of the week (0 = Sunday, 1 = Monday, ..., 6 = Saturday)
+    let currentDay = currentDate.getDay();
+
+    if(index.includes("finnifty")){
+        // Calculate the number of days until the next Thursday (0 = Thursday, 1 = Friday, ..., 6 = Wednesday)
+        let daysUntilThursday = (2 - currentDay+7) % 7;
+
+        // Create a new date object for the nearest Thursday
+        let nearestThursday = new Date(currentDate.getTime() + daysUntilThursday * 86400000);
+
+        day = nearestThursday.toISOString().slice(0, 10);
+    } else {
+        // Calculate the number of days until the next Thursday (0 = Thursday, 1 = Friday, ..., 6 = Wednesday)
+        let daysUntilThursday = (11 - currentDay) % 7;
+
+        // Create a new date object for the nearest Thursday
+        let nearestThursday = new Date(currentDate.getTime() + daysUntilThursday * 86400000);
+
+        day = nearestThursday.toISOString().slice(0, 10);
+    }
+    return day;
+}
+
+function calculateOIprctchange(){
+    let table = document.getElementById('optionChainTable');
+    let rows = table.rows;
+    let headers = rows[0].cells;
+    let col1, col2;
+
+    for (let i = 0; i < headers.length; i++) {
+        if (headers[i].textContent === 'previous_eod_calls_oi') {
+            col1 = i;
+        }
+        if (headers[i].textContent === 'Call OI') {
+            col2 = i;
+        }
+    }
+
+    for (let i = 1; i < rows.length; i++) {
+        let POI = parseFloat(rows[i].cells[col1].innerText);
+        let OI = parseFloat(rows[i].cells[col2].innerText);
+        let percentChange = ((OI - POI) / POI) * 100;
+        rows[i].cells[col2].textContent = OI + " ("+percentChange.toFixed(1) + '%'+")";
+    }
+
+    for (let i = 0; i < headers.length; i++) {
+        if (headers[i].textContent === 'previous_eod_puts_oi') {
+            col3= i;
+        }
+        if (headers[i].textContent === 'Put OI') {
+            col4= i;
+        }
+    }
+
+    for (let j = 1; j < rows.length; j++) {
+        let POI = parseFloat(rows[j].cells[col3].innerText);
+        let OI = parseFloat(rows[j].cells[col4].innerText);
+        let percentChange = ((OI - POI) / POI) * 100;
+        if(percentChange == 0.00){
+            rows[j].cells[col4].textContent = OI + ' (0%)';    
+        } else {
+        rows[j].cells[col4].textContent = OI + " ("+percentChange.toFixed(1) + '%'+")";
+        }
+    }
+    removetabledata("previous_eod_puts_oi");
+    removetabledata("previous_eod_calls_oi");
+}
