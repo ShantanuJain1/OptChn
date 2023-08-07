@@ -251,9 +251,9 @@ function removerows(closeprice, index) {
     var table = document.getElementById("optionChainTable");
     var value =0;
     if(index.includes("bank")){
-        value = 2000;
-    } else{
         value = 1000;
+    } else{
+        value = 500;
     }
     const lowerrange = parseInt(Math.round(closeprice / roundnumber) * roundnumber)-value;
     const higherrange = parseInt(Math.round(closeprice / roundnumber) * roundnumber)+value;
