@@ -11,7 +11,8 @@ async function getoptionchaindata() {
     console.log("INDEX VALUE IS:"+index);
 
     thrusday = getnearestExpiry(index);
-    const uri = `https://dev-api.niftytrader.in/webapi/option/fatch-option-chain?symbol=${index}&expiryDate=`
+    // const uri = `https://dev-api.niftytrader.in/webapi/option/fatch-option-chain?symbol=${index}&expiryDate=`
+    const uri = `https://logical-powerful-titmouse.ngrok-free.app/getoptionchain/${index}`
     const url = 'https://corsproxy.io/?'+uri;
     return fetch(url, {
         method: 'GET',
