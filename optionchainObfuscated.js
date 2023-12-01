@@ -18,6 +18,7 @@ async function getoptionchaindata() {
         method: 'GET',
         headers: {
             'Accept': 'application/json',
+            'ngrok-skip-browser-warning': 'your-rapidapi-key',
         },
     })
         .then(response => response.json())
